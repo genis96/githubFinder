@@ -9,6 +9,8 @@ import Alert from './components/layout/Alert';
 import About from './components/pages/About';
 import axios from 'axios'; 
 
+//user issue and component inssue... unsure where
+
 // class based component 
 const App = () => {
 
@@ -28,6 +30,7 @@ const App = () => {
     setUsers(res.data.items);
     setLoading(false);
   };
+
 
   //get single github user - create method - added the ? after username inside api and removed search bc we jusr want the user 
   const getUser = async username => {
